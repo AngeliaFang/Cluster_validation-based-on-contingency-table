@@ -51,17 +51,17 @@ def ARI1():
     col_sum = 0
     for i in range(ROW - 1):
         for j in range(COL - 1):
-            all_sum = combination_number(contingency1[i][j])
+            all_sum += combination_number(contingency1[i][j])
             
     
     for i in range(ROW - 1):
         #print M_I[i]
-        row_sum = combination_number(M_I[i])
+        row_sum += combination_number(M_I[i])
         
     #print row_sum
         
     for j in range(COL - 1):
-        col_sum = combination_number(M_J[j])
+        col_sum += combination_number(M_J[j])
     
     sum_mul = row_sum * col_sum / T
     
